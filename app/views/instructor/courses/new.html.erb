@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+Create a Course!
+  <%= simple_form_for @course, url: instructor_courses_path do |t| %>
+  <%= t.input :title %>
+  <%= t.input :description %>
+  <%= t.input :cost %>
+  <%= t.submit 'Submit a course',  class: 'btn btn-danger' %>
+  <% end %>
+</div>

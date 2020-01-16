@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div id="flex-content-container">
   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,6 +36,7 @@
             <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
           </li>
         <% end %>
+      </ul>
      </div>
    </nav>
 
@@ -46,5 +48,12 @@
    <% end %>
 
    <%= yield %>
+ </div>
+
+ <div id="footer">
+  <b>Teachers</b>
+  <br />
+  <%= link_to 'Teach a course!', new_instructor_course_path %>
+</div>
  </body>
  </html>
